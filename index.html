@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KahawaPay Brand Guide - Visual Sample Package</title>
+    
+    <!-- Web Awesome Pro -->
+    <script type="module" src="https://early.webawesome.com/webawesome@v3.0.0-beta.6/dist/webawesome.loader.js"></script>
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <style>
+        /* Web Awesome Theme Tokens */
+        :root {
+            /* Map to Web Awesome / Shoelace design tokens */
+            --sl-color-primary-50: #FAF6F3;
+            --sl-color-primary-100: #F0E6DC;
+            --sl-color-primary-200: #D4BBA6;
+            --sl-color-primary-300: #B89070;
+            --sl-color-primary-400: #8F6A4E;
+            --sl-color-primary-500: #6F4E37;
+            --sl-color-primary-600: #5A3F2C;
+            --sl-color-primary-700: #453021;
+            --sl-color-primary-800: #302117;
+            --sl-color-primary-900: #1B120D;
+
+            --sl-color-success-500: #2A9D8F;
+            --sl-color-warning-500: #E9A820;
+            --sl-color-danger-500: #D94F4F;
+
+            --sl-color-neutral-0: #FFFFFF;
+            --sl-color-neutral-50: #FAF6F3;
+            --sl-color-neutral-100: #F0E6DC;
+            --sl-color-neutral-300: #D4BBA6;
+            --sl-color-neutral-500: #8F6A4E;
+            --sl-color-neutral-700: #5A3F2C;
+            --sl-color-neutral-900: #1A1A2E;
+            --sl-color-neutral-1000: #1A1A2E;
+
+            --sl-panel-background-color: #FFFFFF;
+            --sl-panel-border-color: #D4BBA6;
+            --sl-input-background-color: #FFFFFF;
+            --sl-input-border-color: #D4BBA6;
+            --sl-input-focus-ring-color: rgba(42, 157, 143, 0.4);
+            
+            --sl-font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            --sl-font-mono: "SF Mono", SFMono-Regular, ui-monospace, "DejaVu Sans Mono", Menlo, Consolas, monospace;
+            --sl-font-size-medium: 1rem;
+            --sl-font-size-small: 0.875rem;
+            --sl-font-size-x-small: 0.75rem;
+            --sl-line-height-normal: 1.6;
+            --sl-line-height-dense: 1.4;
+            
+            /* Brand Colors */
+            --coffee-brown: #6F4E37;
+            --teal: #2A9D8F;
+            --dark-navy: #1A1A2E;
+            --vanilla-cream: #F5E6CA;
+            --page-bg: #FAF6F3;
+            
+            /* Extended Palette */
+            --brown-50: #FAF6F3;
+            --brown-100: #F0E6DC;
+            --brown-200: #D4BBA6;
+            --brown-300: #B89070;
+            --brown-400: #8F6A4E;
+            --brown-500: #6F4E37;
+            --brown-600: #5A3F2C;
+            --brown-700: #453021;
+            --brown-800: #302117;
+            --brown-900: #1B120D;
+            
+            --teal-50: #F0FAF9;
+            --teal-100: #D1F0EC;
+            --teal-200: #A3E1D9;
+            --teal-300: #5DC4B6;
+            --teal-400: #34B0A2;
+            --teal-500: #2A9D8F;
+            --teal-600: #228075;
+            --teal-700: #1A635B;
+            --teal-800: #124641;
+            --teal-900: #0A2927;
+            
+            /* Semantic Colors */
+            --success: #2A9D8F;
+            --success-light: #D1F0EC;
+            --warning: #E9A820;
+            --warning-light: #FDF4DC;
+            --error: #D94F4F;
+            --error-light: #FDE8E8;
+            --info: #4A90D9;
+            --info-light: #E8F0FD;
+            
+            /* Text Colors */
+            --text-primary: #1A1A2E;
+            --text-secondary: #5A3F2C;
+            --text-muted: #8F6A4E;
+            --text-on-dark: #F5E6CA;
+            --text-on-primary: #FFFFFF;
+            --text-link: #2A9D8F;
+        }
+        
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--sl-font-sans);
+            background-color: var(--page-bg);
+            color: var(--text-primary);
+            line-height: var(--sl-line-height-normal);
+        }
+        
+        /* Typography */
+        h1 { font-size: 1.875rem; font-weight: 700; line-height: 1.2; letter-spacing: -0.025em; margin-bottom: 1rem; }
+        h2 { font-size: 1.5rem; font-weight: 700; line-height: 1.25; letter-spacing: -0.02em; margin-bottom: 0.75rem; }
+        h3 { font-size: 1.25rem; font-weight: 600; line-height: 1.3; letter-spacing: -0.015em; margin-bottom: 0.5rem; }
+        h4 { font-size: 1.125rem; font-weight: 600; line-height: 1.35; margin-bottom: 0.5rem; }
+        h5 { font-size: 1rem; font-weight: 600; line-height: 1.4; margin-bottom: 0.5rem; }
+        h6 { font-size: 0.875rem; font-weight: 600; line-height: 1.4; letter-spacing: 0.02em; text-transform: uppercase; margin-bottom: 0.5rem; }
+        
+        /* Layout */
+        .container { max-width: 72rem; margin: 0 auto; padding: 0 1rem; }
+        .section { margin-bottom: 4rem; }
+        .grid { display: grid; gap: 1.5rem; }
+        .grid-2 { grid-template-columns: 1fr; }
+        .grid-3 { grid-template-columns: 1fr; }
+        .grid-4 { grid-template-columns: 1fr; }
+        
+        @media (min-width: 768px) {
+            .grid-2 { grid-template-columns: repeat(2, 1fr); }
+            .grid-3 { grid-template-columns: repeat(3, 1fr); }
+            .grid-4 { grid-template-columns: repeat(4, 1fr); }
+        }
+        
+        @media (min-width: 1024px) {
+            .container { padding: 0 2rem; }
+        }
+        
+        /* Cards */
+        .card {
+            background: white;
+            border: 1px solid var(--brown-100);
+            border-radius: 0.75rem;
+            padding: 1.25rem;
+            box-shadow: 0 1px 3px rgba(26, 26, 46, 0.06);
+        }
+        
+        .card.interactive:hover {
+            box-shadow: 0 4px 12px rgba(26, 26, 46, 0.1);
+            cursor: pointer;
+        }
+        
+        .card-header {
+            border-bottom: 1px solid var(--brown-100);
+            margin: -1.25rem -1.25rem 1.25rem;
+            padding: 1rem 1.25rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+        
+        /* Color Swatches */
+        .swatch {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            background: white;
+            border: 1px solid var(--brown-100);
+        }
+        
+        .swatch-color {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.5rem;
+            border: 1px solid rgba(0,0,0,0.1);
+            flex-shrink: 0;
+        }
+        
+        .swatch-info h4 {
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+        
+        .swatch-info p {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            font-family: var(--sl-font-mono);
+        }
+        
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.625rem 1.25rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            font-size: 0.875rem;
+            text-decoration: none;
+            cursor: pointer;
+            border: 1px solid transparent;
+            transition: all 0.2s;
+        }
+        
+        .btn-primary {
+            background: var(--coffee-brown);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: var(--brown-600);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--coffee-brown);
+            border-color: var(--coffee-brown);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--brown-50);
+        }
+        
+        .btn-ghost {
+            background: transparent;
+            color: var(--coffee-brown);
+        }
+        
+        .btn-ghost:hover {
+            background: var(--brown-50);
+        }
+        
+        .btn-danger {
+            background: var(--error);
+            color: white;
+        }
+        
+        .btn-danger:hover {
+            background: #C14444;
+        }
+        
+        .btn-success {
+            background: var(--teal-500);
+            color: white;
+        }
+        
+        .btn-success:hover {
+            background: var(--teal-600);
+        }
+        
+        .btn-sm {
+            padding: 0.5rem 1rem;
+            font-size: 0.75rem;
+        }
+        
+        .btn-lg {
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+        }
+        
+        /* Form Elements */
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+        
+        .form-label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--brown-700);
+            margin-bottom: 0.25rem;
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 0.625rem 0.75rem;
+            border: 1px solid var(--brown-200);
+            border-radius: 0.5rem;
+            background: white;
+            font-size: 0.875rem;
+            transition: all 0.2s;
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: var(--teal);
+            box-shadow: 0 0 0 3px rgba(42, 157, 143, 0.25);
+        }
+        
+        .form-input:disabled {
+            background: var(--brown-50);
+            color: var(--text-muted);
+            cursor: not-allowed;
+        }
+        
+        .form-input.error {
+            border-color: var(--error);
+        }
+        
+        .form-input.error:focus {
+            box-shadow: 0 0 0 3px rgba(217, 79, 79, 0.25);
+        }
+        
+        /* Status Badges */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            padding: 0.125rem 0.625rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .badge-success {
+            background: var(--teal-100);
+            color: var(--teal-700);
+        }
+        
+        .badge-warning {
+            background: var(--warning-light);
+            color: #8B6914;
+        }
+        
+        .badge-error {
+            background: var(--error-light);
+            color: #9B3333;
+        }
+        
+        .badge-inactive {
+            background: var(--brown-100);
+            color: var(--brown-600);
+        }
+        
+        .badge-dot::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: currentColor;
+        }
+        
+        /* Tables */
+        .table-container {
+            background: white;
+            border-radius: 0.75rem;
+            border: 1px solid var(--brown-100);
+            overflow: hidden;
+        }
+        
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .table th {
+            background: var(--brown-50);
+            padding: 0.75rem 1rem;
+            text-align: left;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--brown-700);
+            border-bottom: 1px solid var(--brown-100);
+        }
+        
+        .table td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid var(--brown-100);
+        }
+        
+        .table tbody tr:hover {
+            background: var(--brown-50);
+        }
+        
+        .table-numeric {
+            text-align: right;
+            font-family: var(--sl-font-mono);
+            font-weight: 500;
+        }
+        
+        /* Navigation */
+        .sidebar {
+            width: 16rem;
+            background: var(--dark-navy);
+            color: var(--vanilla-cream);
+            padding: 1.5rem;
+            height: 400px;
+            overflow-y: auto;
+        }
+        
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            color: rgba(245, 230, 202, 0.7);
+            margin-bottom: 0.25rem;
+            transition: all 0.2s;
+        }
+        
+        .nav-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .nav-item.active {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--vanilla-cream);
+            border-left: 3px solid var(--teal);
+        }
+        
+        .nav-section {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: rgba(245, 230, 202, 0.4);
+            margin: 1.5rem 0 0.5rem;
+            font-weight: 600;
+        }
+        
+        .mobile-nav {
+            height: 4rem;
+            background: white;
+            border-top: 1px solid var(--brown-100);
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 0 1rem;
+        }
+        
+        .mobile-nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.25rem;
+            color: var(--brown-400);
+            text-decoration: none;
+            font-size: 0.75rem;
+        }
+        
+        .mobile-nav-item.active {
+            color: var(--teal);
+        }
+        
+        .mobile-nav-item i {
+            font-size: 1.25rem;
+        }
+        
+        /* Empty States */
+        .empty-state {
+            text-align: center;
+            max-width: 20rem;
+            margin: 0 auto;
+            padding: 3rem 1rem;
+        }
+        
+        .empty-state i {
+            font-size: 2.5rem;
+            color: var(--brown-300);
+            margin-bottom: 1rem;
+        }
+        
+        .empty-state h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--brown-700);
+            margin-bottom: 0.5rem;
+        }
+        
+        .empty-state p {
+            font-size: 0.875rem;
+            color: var(--brown-400);
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Alerts */
+        .alert {
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+        
+        .alert-success {
+            background: var(--success-light);
+            color: var(--teal-700);
+            border: 1px solid var(--teal-200);
+        }
+        
+        .alert-warning {
+            background: var(--warning-light);
+            color: #8B6914;
+            border: 1px solid var(--warning);
+        }
+        
+        .alert-error {
+            background: var(--error-light);
+            color: #9B3333;
+            border: 1px solid var(--error);
+        }
+        
+        .alert-info {
+            background: var(--info-light);
+            color: #2563EB;
+            border: 1px solid var(--info);
+        }
+        
+        /* Skeleton Loading */
+        .skeleton {
+            background: linear-gradient(90deg, var(--brown-100) 25%, transparent 37%, var(--brown-100) 63%);
+            background-size: 400% 100%;
+            border-radius: 0.5rem;
+            height: 1rem;
+            animation: skeleton 1.5s ease-in-out infinite;
+        }
+        
+        @keyframes skeleton {
+            0% { background-position: 100% 50%; }
+            100% { background-position: -100% 50%; }
+        }
+        
+        .skeleton-text { height: 1rem; margin-bottom: 0.5rem; }
+        .skeleton-title { height: 1.5rem; width: 60%; margin-bottom: 1rem; }
+        .skeleton-avatar { width: 3rem; height: 3rem; border-radius: 50%; }
+        
+        /* Login Page */
+        .login-page {
+            min-height: 500px;
+            background: var(--page-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1rem;
+        }
+        
+        .login-card {
+            background: white;
+            border-radius: 0.75rem;
+            padding: 2rem;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 4px 12px rgba(26, 26, 46, 0.08);
+            text-align: center;
+        }
+        
+        .login-logo {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--coffee-brown) 0%, var(--coffee-brown) 50%, var(--teal) 50%, var(--teal) 100%);
+            border-radius: 50%;
+            margin: 0 auto 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+        }
+        
+        .phone-input-group {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .country-code {
+            flex-shrink: 0;
+            width: 80px;
+            padding: 0.625rem 0.5rem;
+            border: 1px solid var(--brown-200);
+            border-radius: 0.5rem;
+            background: var(--brown-50);
+            text-align: center;
+            font-weight: 500;
+        }
+        
+        /* Dashboard */
+        .dashboard {
+            background: var(--page-bg);
+            min-height: 500px;
+        }
+        
+        .dashboard-header {
+            background: white;
+            border-bottom: 1px solid var(--brown-100);
+            padding: 1rem 0;
+            margin-bottom: 2rem;
+        }
+        
+        .dashboard-layout {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        
+        @media (min-width: 1024px) {
+            .dashboard-layout {
+                grid-template-columns: 16rem 1fr;
+            }
+        }
+        
+        .stat-cards {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+        
+        @media (min-width: 640px) {
+            .stat-cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .stat-cards {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            border: 1px solid var(--brown-100);
+        }
+        
+        .stat-card-icon {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .stat-card-icon.teal { background: var(--teal); }
+        .stat-card-icon.brown { background: var(--coffee-brown); }
+        .stat-card-icon.warning { background: var(--warning); }
+        .stat-card-icon.success { background: var(--success); }
+        
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+        
+        .stat-label {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+        
+        /* Sticky TOC */
+        .toc {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            background: white;
+            border: 1px solid var(--brown-200);
+            border-radius: 0.5rem;
+            padding: 1rem;
+            max-width: 200px;
+            max-height: 80vh;
+            overflow-y: auto;
+            z-index: 100;
+            display: none;
+        }
+        
+        @media (min-width: 1280px) {
+            .toc { display: block; }
+        }
+        
+        .toc h3 {
+            font-size: 0.875rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+        }
+        
+        .toc ul {
+            list-style: none;
+        }
+        
+        .toc li {
+            margin-bottom: 0.25rem;
+        }
+        
+        .toc a {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            display: block;
+            padding: 0.25rem 0;
+            border-radius: 0.25rem;
+            padding-left: 0.5rem;
+        }
+        
+        .toc a:hover {
+            background: var(--brown-50);
+            color: var(--text-primary);
+        }
+        
+        /* Utility Classes */
+        .text-center { text-align: center; }
+        .text-right { text-align: right; }
+        .mb-4 { margin-bottom: 1rem; }
+        .mb-8 { margin-bottom: 2rem; }
+        .mt-4 { margin-top: 1rem; }
+        .flex { display: flex; }
+        .items-center { align-items: center; }
+        .justify-between { justify-content: space-between; }
+        .gap-4 { gap: 1rem; }
+        .w-full { width: 100%; }
+    </style>
+</head>
+<body>
+    <!-- Table of Contents -->
+    <nav class="toc">
+        <h3>Contents</h3>
+        <ul>
+            <li><a href="#colors">Colors</a></li>
+            <li><a href="#typography">Typography</a></li>
+            <li><a href="#buttons">Buttons</a></li>
+            <li><a href="#inputs">Inputs</a></li>
+            <li><a href="#cards">Cards</a></li>
+            <li><a href="#badges">Status Badges</a></li>
+            <li><a href="#tables">Tables</a></li>
+            <li><a href="#navigation">Navigation</a></li>
+            <li><a href="#empty-states">Empty States</a></li>
+            <li><a href="#loading">Loading States</a></li>
+            <li><a href="#alerts">Alerts</a></li>
+            <li><a href="#login">Login Page</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Header -->
+        <header style="text-align: center; padding: 4rem 0 2rem;">
+            <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #6F4E37 0%, #6F4E37 50%, #2A9D8F 50%, #2A9D8F 100%); border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white;">
+                <i class="fas fa-coffee"></i>
+            </div>
+            <h1>KahawaPay Brand Guide</h1>
+            <p style="color: var(--text-secondary); font-size: 1.125rem;">Visual Sample Package — Design System Reference</p>
+        </header>
+
+        <!-- 1. Color Palette -->
+        <section id="colors" class="section">
+            <h2>1. Color Palette</h2>
+            
+            <h3>Brand Colors</h3>
+            <div class="grid grid-2 mb-8">
+                <div class="swatch">
+                    <div class="swatch-color" style="background: #6F4E37;"></div>
+                    <div class="swatch-info">
+                        <h4>Coffee Brown</h4>
+                        <p>#6F4E37</p>
+                    </div>
+                </div>
+                <div class="swatch">
+                    <div class="swatch-color" style="background: #2A9D8F;"></div>
+                    <div class="swatch-info">
+                        <h4>Teal</h4>
+                        <p>#2A9D8F</p>
+                    </div>
+                </div>
+                <div class="swatch">
+                    <div class="swatch-color" style="background: #1A1A2E;"></div>
+                    <div class="swatch-info">
+                        <h4>Dark Navy</h4>
+                        <p>#1A1A2E</p>
+                    </div>
+                </div>
+                <div class="swatch">
+                    <div class="swatch-color" style="background: #F5E6CA;"></div>
+                    <div class="swatch-info">
+                        <h4>Vanilla Cream</h4>
+                        <p>#F5E6CA</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h3>Extended Brown Palette</h3>
+            <div class="grid grid-3 mb-8">
+                <div class="swatch"><div class="swatch-color" style="background: #FAF6F3;"></div><div class="swatch-info"><h4>Brown 50</h4><p>#FAF6F3</p></div></div>
+                <div class="swatch"><div class="swatch-color" style="background: #F0E6DC;"></div><div class="swatch-info"><h4>Brown 100</h4><p>#F0E6DC</p></div></div>
+                <div class="swatch"><div class="swatch-color" style="background: #D4BBA6;"></div><div class="swatch-info"><h4>Brown 200</h4><p>#D4BBA6</p></div></div>
+                <div class="swatch"><div class="swatch-color" style="background: #B89070;"></div><div class="swatch-info"><h4>Brown 300</h4><p>#B89070</p></div></div>
+                <div class="swatch"><div class="swatch-color" style="background: #8F6A4E;"></div><div class="swatch-info"><h4>Brown 400</h4><p>#8F6A4E</p></div></div>
+                <div class="swatch"><div class="swatch-color" style="background: #6F4E37;"></div><div class="swatch-info"><h4>Brown 500</h4><p>#6F4E37</p></div></div>
+            </div>
+            
+            <h3>Extended Teal Palette</h3>
+            <div class="grid grid-3 mb-8">
+                <div class="swatch"><div class="swatch-color" style="background: #F0FAF9;"></div><div class="swatch-info"><h4>Teal 50</h4><p>#F0FAF9</p></div></div>
+                <div class="swatch"><div class="swatch-color" style="background: #D1F0EC;"></div><div class="swatch-info"><h4>Teal 100</h4><p>#D1F0EC</p></div></div>
+                <div class="swatch"><div class="swatch-color" style="background: #A3E1D9;"></div><div class="swatch-info"><h4>Teal 200</h4><p>#A3E1D9</p></div></div>
+                <div class="swatch"><div class="swatch-color" style="background: #5DC4B6;"></div><div class="swatch-info"><h4>Teal 300</h4><p>#5DC4B6</p></div></div>
+                <div class="swatch"><div class="swatch-color" style="background: #34B0A2;"></div><div class="swatch-info"><h4>Teal 400</h4><p>#34B0A2</p></div></div>
+                <div class="swatch"><div class="swatch-color" style="background: #2A9D8F;"></div><div class="swatch-info"><h4>Teal 500</h4><p>#2A9D8F</p></div></div>
+            </div>
+            
+            <h3>Semantic Colors</h3>
+            <div class="grid grid-2">
+                <div class="swatch"><div class="swatch-color" style="background: #2A9D8F;"></div><div class="swatch-info"><h4>Success</h4><p>#2A9D8F</p></div></div>
+                <div class="swatch"><div class="swatch-color" style="background: #E9A820;"></div><div class="swatch-info"><h4>Warning</h4><p>#E9A820</p></div></div>
+                <div class="swatch"><div class="swatch-color" style="background: #D94F4F;"></div><div class="swatch-info"><h4>Error</h4><p>#D94F4F</p></div></div>
+                <div class="swatch"><div class="swatch-color" style="background: #4A90D9;"></div><div class="swatch-info"><h4>Info</h4><p>#4A90D9</p></div></div>
+            </div>
+        </section>
+
+        <!-- 2. Typography -->
+        <section id="typography" class="section">
+            <h2>2. Typography</h2>
+            <div class="card">
+                <h1>H1 Heading - 30px Bold</h1>
+                <h2>H2 Heading - 24px Bold</h2>
+                <h3>H3 Heading - 20px Semibold</h3>
+                <h4>H4 Heading - 18px Semibold</h4>
+                <h5>H5 Heading - 16px Semibold</h5>
+                <h6>H6 Heading - 14px Semibold Uppercase</h6>
+                
+                <div style="margin-top: 2rem;">
+                    <p style="font-size: 1rem; line-height: 1.6; margin-bottom: 1rem;">
+                        <strong>Body Text (16px)</strong> - This is the default body text used throughout the application. It maintains excellent readability with a line height of 1.6 for comfortable reading on all devices.
+                    </p>
+                    <p style="font-size: 0.875rem; margin-bottom: 1rem;">
+                        <strong>Small Text (14px)</strong> - Used for labels, secondary information, and compact layouts.
+                    </p>
+                    <p style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 1rem;">
+                        <strong>Caption Text (12px)</strong> - For timestamps, hints, and minor details.
+                    </p>
+                    <p style="font-family: var(--sl-font-mono); font-size: 0.875rem; font-weight: 500;">
+                        <strong>Data/Numbers (14px Mono)</strong> - KES 12,450.00
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Buttons -->
+        <section id="buttons" class="section">
+            <h2>3. Buttons</h2>
+            
+            <div class="grid grid-2">
+                <div class="card">
+                    <div class="card-header">Button Variants</div>
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-check"></i> Primary Button
+                        </button>
+                        <button class="btn btn-secondary">
+                            <i class="fas fa-edit"></i> Secondary Button
+                        </button>
+                        <button class="btn btn-ghost">
+                            <i class="fas fa-eye"></i> Ghost Button
+                        </button>
+                        <button class="btn btn-danger">
+                            <i class="fas fa-trash"></i> Danger Button
+                        </button>
+                        <button class="btn btn-success">
+                            <i class="fas fa-download"></i> Success Button
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Button Sizes</div>
+                    <div style="display: flex; flex-direction: column; gap: 1rem; align-items: flex-start;">
+                        <button class="btn btn-primary btn-sm">Small Button</button>
+                        <button class="btn btn-primary">Medium Button</button>
+                        <button class="btn btn-primary btn-lg">Large Button</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card mt-4">
+                <div class="card-header">Web Awesome Components</div>
+                <div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: center;">
+                    <sl-button variant="primary">
+                        <sl-icon name="check-lg" slot="prefix"></sl-icon>
+                        Primary
+                    </sl-button>
+                    <sl-button variant="default">
+                        <sl-icon name="pencil" slot="prefix"></sl-icon>
+                        Secondary
+                    </sl-button>
+                    <sl-button variant="success">
+                        <sl-icon name="download" slot="prefix"></sl-icon>
+                        Success
+                    </sl-button>
+                    <sl-button variant="danger">
+                        <sl-icon name="trash" slot="prefix"></sl-icon>
+                        Danger
+                    </sl-button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Input Fields -->
+        <section id="inputs" class="section">
+            <h2>4. Input Fields</h2>
+            
+            <div class="grid grid-2">
+                <div class="card">
+                    <div class="card-header">Text Inputs</div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Member Name</label>
+                        <input type="text" class="form-input" placeholder="Enter member name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Phone Number</label>
+                        <input type="tel" class="form-input" value="+254 712 345 678">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Email (Optional)</label>
+                        <input type="email" class="form-input" disabled placeholder="Not available">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Delivery Weight (Error State)</label>
+                        <input type="text" class="form-input error" value="Twenty kilograms">
+                        <div style="color: var(--error); font-size: 0.75rem; margin-top: 0.25rem;">
+                            Please enter a valid number
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Select & Textarea</div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Cooperative</label>
+                        <select class="form-input">
+                            <option>Kiambu Coffee Cooperative</option>
+                            <option>Nyeri Farmers Union</option>
+                            <option>Muranga Coffee Growers</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Delivery Notes</label>
+                        <textarea class="form-input" rows="4" placeholder="Optional notes about this delivery..."></textarea>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card mt-4">
+                <div class="card-header">Web Awesome Form Components</div>
+                <div class="grid grid-2" style="gap: 2rem;">
+                    <div>
+                        <sl-input label="Member ID" placeholder="KAH001" help-text="Auto-generated unique identifier">
+                        </sl-input>
+                    </div>
+                    <div>
+                        <sl-select label="Payment Status" value="paid">
+                            <sl-option value="pending">Pending</sl-option>
+                            <sl-option value="paid">Paid</sl-option>
+                            <sl-option value="overdue">Overdue</sl-option>
+                        </sl-select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Cards -->
+        <section id="cards" class="section">
+            <h2>5. Cards</h2>
+            
+            <div class="grid grid-3">
+                <div class="card">
+                    <h3>Default Card</h3>
+                    <p>This is a standard card with basic styling. Used for displaying content in organized sections.</p>
+                    <div style="margin-top: 1rem;">
+                        <span class="badge badge-success">Active</span>
+                    </div>
+                </div>
+                
+                <div class="card interactive">
+                    <h3>Interactive Card</h3>
+                    <p>This card has hover effects and appears clickable. Hover to see the enhanced shadow effect.</p>
+                    <div style="margin-top: 1rem; color: var(--text-muted); font-size: 0.875rem;">
+                        <i class="fas fa-external-link-alt"></i> Click to open
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-user"></i> Card with Header
+                    </div>
+                    <p>This card includes a header section that's visually separated from the main content area.</p>
+                    <div style="margin-top: 1rem;">
+                        <button class="btn btn-primary btn-sm">Action</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Status Badges -->
+        <section id="badges" class="section">
+            <h2>6. Status Badges</h2>
+            
+            <div class="grid grid-2">
+                <div class="card">
+                    <div class="card-header">Without Dots</div>
+                    <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                        <span class="badge badge-success">Active</span>
+                        <span class="badge badge-success">Paid</span>
+                        <span class="badge badge-warning">Pending</span>
+                        <span class="badge badge-error">Failed</span>
+                        <span class="badge badge-error">Overdue</span>
+                        <span class="badge badge-inactive">Draft</span>
+                        <span class="badge badge-inactive">Inactive</span>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">With Dots</div>
+                    <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                        <span class="badge badge-success badge-dot">Active</span>
+                        <span class="badge badge-success badge-dot">Paid</span>
+                        <span class="badge badge-warning badge-dot">Pending</span>
+                        <span class="badge badge-error badge-dot">Failed</span>
+                        <span class="badge badge-error badge-dot">Overdue</span>
+                        <span class="badge badge-inactive badge-dot">Draft</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Tables -->
+        <section id="tables" class="section">
+            <h2>7. Tables</h2>
+            
+            <div class="table-container">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Member Name</th>
+                            <th>Delivery Date</th>
+                            <th class="table-numeric">Weight (kg)</th>
+                            <th class="table-numeric">Amount (KES)</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>James Mwangi</td>
+                            <td>Feb 14, 2026</td>
+                            <td class="table-numeric">12.5</td>
+                            <td class="table-numeric">5,000.00</td>
+                            <td><span class="badge badge-success">Paid</span></td>
+                        </tr>
+                        <tr>
+                            <td>Mary Wanjiku</td>
+                            <td>Feb 14, 2026</td>
+                            <td class="table-numeric">8.2</td>
+                            <td class="table-numeric">3,280.00</td>
+                            <td><span class="badge badge-warning">Pending</span></td>
+                        </tr>
+                        <tr>
+                            <td>Peter Kamau</td>
+                            <td>Feb 13, 2026</td>
+                            <td class="table-numeric">15.7</td>
+                            <td class="table-numeric">6,280.00</td>
+                            <td><span class="badge badge-success">Paid</span></td>
+                        </tr>
+                        <tr>
+                            <td>Grace Njeri</td>
+                            <td>Feb 12, 2026</td>
+                            <td class="table-numeric">9.8</td>
+                            <td class="table-numeric">3,920.00</td>
+                            <td><span class="badge badge-error">Overdue</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 8. Navigation -->
+        <section id="navigation" class="section">
+            <h2>8. Navigation</h2>
+            
+            <div class="grid grid-2">
+                <div>
+                    <h3>Desktop Sidebar</h3>
+                    <div class="sidebar">
+                        <div style="text-align: center; margin-bottom: 2rem;">
+                            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #6F4E37 0%, #6F4E37 50%, #2A9D8F 50%, #2A9D8F 100%); border-radius: 50%; margin: 0 auto 0.5rem; display: flex; align-items: center; justify-content: center; color: white;">
+                                <i class="fas fa-coffee"></i>
+                            </div>
+                            <div style="font-weight: 600;">KahawaPay</div>
+                        </div>
+                        
+                        <div class="nav-section">Main</div>
+                        <a href="#" class="nav-item active">
+                            <i class="fas fa-gauge"></i>
+                            Dashboard
+                        </a>
+                        <a href="#" class="nav-item">
+                            <i class="fas fa-truck"></i>
+                            Deliveries
+                        </a>
+                        <a href="#" class="nav-item">
+                            <i class="fas fa-users"></i>
+                            Members
+                        </a>
+                        <a href="#" class="nav-item">
+                            <i class="fas fa-coins"></i>
+                            Payments
+                        </a>
+                        
+                        <div class="nav-section">Reports</div>
+                        <a href="#" class="nav-item">
+                            <i class="fas fa-chart-simple"></i>
+                            Analytics
+                        </a>
+                        <a href="#" class="nav-item">
+                            <i class="fas fa-download"></i>
+                            Export Data
+                        </a>
+                        
+                        <div class="nav-section">Settings</div>
+                        <a href="#" class="nav-item">
+                            <i class="fas fa-gear"></i>
+                            Preferences
+                        </a>
+                        <a href="#" class="nav-item">
+                            <i class="fas fa-right-from-bracket"></i>
+                            Logout
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3>Mobile Bottom Navigation</h3>
+                    <div style="max-width: 375px; margin: 0 auto;">
+                        <div class="mobile-nav">
+                            <a href="#" class="mobile-nav-item active">
+                                <i class="fas fa-gauge"></i>
+                                <span>Dashboard</span>
+                            </a>
+                            <a href="#" class="mobile-nav-item">
+                                <i class="fas fa-truck"></i>
+                                <span>Deliveries</span>
+                            </a>
+                            <a href="#" class="mobile-nav-item">
+                                <i class="fas fa-users"></i>
+                                <span>Members</span>
+                            </a>
+                            <a href="#" class="mobile-nav-item">
+                                <i class="fas fa-chart-simple"></i>
+                                <span>Reports</span>
+                            </a>
+                            <a href="#" class="mobile-nav-item">
+                                <i class="fas fa-gear"></i>
+                                <span>Settings</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Empty States -->
+        <section id="empty-states" class="section">
+            <h2>9. Empty States</h2>
+            
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="empty-state">
+                        <i class="fas fa-truck"></i>
+                        <h3>No deliveries recorded yet</h3>
+                        <p>Tap + to log your first delivery and start tracking payments.</p>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-plus"></i> Add Delivery
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="empty-state">
+                        <i class="fas fa-users"></i>
+                        <h3>No members added</h3>
+                        <p>Add your first cooperative member to get started with KahawaPay.</p>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-user-plus"></i> Add Member
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="empty-state">
+                        <i class="fas fa-chart-simple"></i>
+                        <h3>Not enough data for reports</h3>
+                        <p>Record a few deliveries first to generate meaningful analytics.</p>
+                        <button class="btn btn-secondary">
+                            <i class="fas fa-eye"></i> View Deliveries
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. Loading States -->
+        <section id="loading" class="section">
+            <h2>10. Loading States</h2>
+            
+            <div class="grid grid-2">
+                <div class="card">
+                    <div class="card-header">Skeleton Screens</div>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                        <div class="skeleton skeleton-title"></div>
+                        <div class="skeleton skeleton-text"></div>
+                        <div class="skeleton skeleton-text" style="width: 80%;"></div>
+                        <div class="skeleton skeleton-text" style="width: 60%;"></div>
+                    </div>
+                    
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div class="skeleton skeleton-avatar"></div>
+                        <div style="flex: 1;">
+                            <div class="skeleton skeleton-text" style="width: 40%; margin-bottom: 0.25rem;"></div>
+                            <div class="skeleton skeleton-text" style="width: 60%; height: 0.75rem;"></div>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; gap: 0.5rem;">
+                        <div class="skeleton" style="height: 2.5rem; width: 100px;"></div>
+                        <div class="skeleton" style="height: 2.5rem; width: 80px;"></div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Spinner States</div>
+                    
+                    <div style="margin-bottom: 2rem;">
+                        <h4>Web Awesome Spinner</h4>
+                        <sl-spinner style="font-size: 2rem; color: var(--teal);"></sl-spinner>
+                    </div>
+                    
+                    <div style="margin-bottom: 2rem;">
+                        <h4>Button Loading State</h4>
+                        <sl-button variant="primary" loading>
+                            <sl-icon name="check-lg" slot="prefix"></sl-icon>
+                            Sending Payment...
+                        </sl-button>
+                    </div>
+                    
+                    <div>
+                        <h4>Page Loading</h4>
+                        <div style="text-align: center; padding: 2rem;">
+                            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #6F4E37 0%, #6F4E37 50%, #2A9D8F 50%, #2A9D8F 100%); border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; color: white; animation: pulse 2s infinite;">
+                                <i class="fas fa-coffee"></i>
+                            </div>
+                            <p style="color: var(--text-muted);">Loading KahawaPay...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. Error Messages -->
+        <section id="alerts" class="section">
+            <h2>11. Error Messages & Alerts</h2>
+            
+            <div class="alert alert-success">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                    <strong>Payment sent successfully</strong><br>
+                    KES 5,000 has been sent to James Mwangi (+254 712 345 678).
+                </div>
+            </div>
+            
+            <div class="alert alert-warning">
+                <i class="fas fa-exclamation-triangle"></i>
+                <div>
+                    <strong>Connection unstable</strong><br>
+                    Your changes are saved locally and will sync when connection improves.
+                </div>
+            </div>
+            
+            <div class="alert alert-error">
+                <i class="fas fa-exclamation-circle"></i>
+                <div>
+                    <strong>Payment could not be sent</strong><br>
+                    Check the phone number and try again. Contact support if the problem persists.
+                </div>
+            </div>
+            
+            <div class="alert alert-info">
+                <i class="fas fa-info-circle"></i>
+                <div>
+                    <strong>New season pricing active</strong><br>
+                    Coffee prices have been updated for the February 2026 harvest season.
+                </div>
+            </div>
+        </section>
+
+        <!-- 12. Sample Login Page -->
+        <section id="login" class="section">
+            <h2>12. Sample Login Page</h2>
+            <div class="card">
+                <div class="card-header">KahawaPay Login - Proper Implementation</div>
+                
+                <div class="login-page">
+                    <div class="login-card">
+                        <div class="login-logo">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <h2 style="margin-bottom: 0.5rem;">Welcome to KahawaPay</h2>
+                        <p style="color: var(--text-muted); margin-bottom: 2rem;">Enter your phone number to continue</p>
+                        
+                        <form>
+                            <div class="form-group">
+                                <label class="form-label">Phone Number</label>
+                                <div class="phone-input-group">
+                                    <div class="country-code">+254</div>
+                                    <input type="tel" class="form-input" placeholder="712 345 678">
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary w-full">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Code
+                            </button>
+                        </form>
+                        
+                        <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--brown-100);">
+                            <p style="font-size: 0.75rem; color: var(--text-muted);">
+                                By continuing, you agree to our Terms of Service
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 13. Sample Dashboard -->
+        <section id="dashboard" class="section">
+            <h2>13. Sample Dashboard</h2>
+            <div class="card">
+                <div class="card-header">Complete Dashboard Layout</div>
+                
+                <div class="dashboard">
+                    <div class="dashboard-header">
+                        <div class="container">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h1 style="margin-bottom: 0;">Dashboard</h1>
+                                    <p style="color: var(--text-muted);">February 15, 2026</p>
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary">
+                                        <i class="fas fa-plus"></i> New Delivery
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="container">
+                        <div class="dashboard-layout">
+                            <div class="sidebar">
+                                <div style="text-align: center; margin-bottom: 2rem;">
+                                    <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #6F4E37 0%, #6F4E37 50%, #2A9D8F 50%, #2A9D8F 100%); border-radius: 50%; margin: 0 auto 0.5rem; display: flex; align-items: center; justify-content: center; color: white;">
+                                        <i class="fas fa-coffee"></i>
+                                    </div>
+                                    <div style="font-weight: 600;">KahawaPay</div>
+                                </div>
+                                
+                                <div class="nav-section">Main</div>
+                                <a href="#" class="nav-item active">
+                                    <i class="fas fa-gauge"></i>
+                                    Dashboard
+                                </a>
+                                <a href="#" class="nav-item">
+                                    <i class="fas fa-truck"></i>
+                                    Deliveries
+                                </a>
+                                <a href="#" class="nav-item">
+                                    <i class="fas fa-users"></i>
+                                    Members
+                                </a>
+                                <a href="#" class="nav-item">
+                                    <i class="fas fa-coins"></i>
+                                    Payments
+                                </a>
+                            </div>
+                            
+                            <div>
+                                <div class="stat-cards mb-8">
+                                    <div class="stat-card">
+                                        <div class="stat-card-icon teal">
+                                            <i class="fas fa-truck"></i>
+                                        </div>
+                                        <div class="stat-value">24</div>
+                                        <div class="stat-label">Today's Deliveries</div>
+                                    </div>
+                                    
+                                    <div class="stat-card">
+                                        <div class="stat-card-icon brown">
+                                            <i class="fas fa-weight-hanging"></i>
+                                        </div>
+                                        <div class="stat-value">342.5 kg</div>
+                                        <div class="stat-label">Total Weight</div>
+                                    </div>
+                                    
+                                    <div class="stat-card">
+                                        <div class="stat-card-icon success">
+                                            <i class="fas fa-coins"></i>
+                                        </div>
+                                        <div class="stat-value">KES 137,000</div>
+                                        <div class="stat-label">Total Value</div>
+                                    </div>
+                                    
+                                    <div class="stat-card">
+                                        <div class="stat-card-icon warning">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div class="stat-value">6</div>
+                                        <div class="stat-label">Pending Payments</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="flex items-center justify-between">
+                                            <div>Recent Deliveries</div>
+                                            <button class="btn btn-ghost btn-sm">
+                                                <i class="fas fa-external-link-alt"></i> View All
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="table-container" style="border: none; border-radius: 0;">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Member</th>
+                                                    <th>Time</th>
+                                                    <th class="table-numeric">Weight</th>
+                                                    <th class="table-numeric">Amount</th>
+                                                    <th>Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>James Mwangi</td>
+                                                    <td>2:30 PM</td>
+                                                    <td class="table-numeric">12.5 kg</td>
+                                                    <td class="table-numeric">5,000.00</td>
+                                                    <td><span class="badge badge-success">Paid</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mary Wanjiku</td>
+                                                    <td>1:15 PM</td>
+                                                    <td class="table-numeric">8.2 kg</td>
+                                                    <td class="table-numeric">3,280.00</td>
+                                                    <td><span class="badge badge-warning">Pending</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Peter Kamau</td>
+                                                    <td>11:45 AM</td>
+                                                    <td class="table-numeric">15.7 kg</td>
+                                                    <td class="table-numeric">6,280.00</td>
+                                                    <td><span class="badge badge-success">Paid</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer style="text-align: center; padding: 4rem 0 2rem; color: var(--text-muted); border-top: 1px solid var(--brown-100); margin-top: 4rem;">
+            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #6F4E37 0%, #6F4E37 50%, #2A9D8F 50%, #2A9D8F 100%); border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; color: white;">
+                <i class="fas fa-coffee"></i>
+            </div>
+            <p><strong>KahawaPay Brand Guide v1.0</strong></p>
+            <p>AxiomLoops — February 2026</p>
+            <p style="font-style: italic;">"Kahawa" means coffee in Swahili. This product serves the people who grow it.</p>
+        </footer>
+    </div>
+
+    <style>
+        /* Pulse animation for loading */
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.05); }
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Web Awesome button overrides */
+        sl-button::part(base) {
+            border-radius: 0.5rem;
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+        
+        sl-button[variant="primary"]::part(base) {
+            background-color: #6F4E37;
+            border-color: #6F4E37;
+        }
+        
+        sl-button[variant="primary"]:hover::part(base) {
+            background-color: #5A3F2C;
+            border-color: #5A3F2C;
+        }
+        
+        sl-input::part(form-control-label) {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--brown-700);
+        }
+        
+        sl-input::part(base) {
+            border-radius: 0.5rem;
+        }
+        
+        sl-select::part(form-control-label) {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--brown-700);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .toc { display: none; }
+            .container { padding: 0 1rem; }
+            .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+            .dashboard-layout { grid-template-columns: 1fr; }
+            .sidebar { display: none; }
+            .stat-cards { grid-template-columns: repeat(2, 1fr); }
+            .phone-input-group { flex-direction: column; }
+            .country-code { width: 100%; }
+        }
+    </style>
+</body>
+</html>
